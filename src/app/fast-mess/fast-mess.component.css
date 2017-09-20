@@ -6,4 +6,4 @@
 .fastMess i{ font-size: 25px;vertical-align: middle;color: #009688;}
 
 .scrollBox{height: 100%;overflow: hidden;}
-.scrollBox li{ height: 100%;}
+.scrollBox li{ height: 100%;transition: all 0.3s ease-in-out}

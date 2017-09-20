@@ -16,6 +16,10 @@ export class FastMessComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this._init();
   }
 
+  public _init(): void {
+    
+  }
 }
