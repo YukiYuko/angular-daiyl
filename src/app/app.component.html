@@ -1,19 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1>{{title}}</h1>
-<h2>My Heroes</h2>
-<ul class="heroes">
-  <li *ngFor="let hero of heroes"
-    [class.selected]="hero === selectedHero"
-    (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
-  </li>
-</ul>
-<div *ngIf="selectedHero">
-  <h2>{{selectedHero.name}} details!</h2>
-  <div><label>id: </label>{{selectedHero.id}}</div>
-  <div>
-    <label>name: </label>
-    <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+<div class="main">
+  <app-head></app-head>
+  <banner></banner>
+  <div class="container">
+      <fast-mess></fast-mess>
+      <div class="row">
+        <div class="col-md-4" style="padding-right:0;">
+          <div class="left"></div>
+        </div>
+        <div class="col-md-8">
+          <div class="right"></div>
+        </div>
+      </div>
   </div>
 </div>
 
