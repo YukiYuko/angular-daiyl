@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
 import { BannerComponent } from './banner/banner.component';
 import { FastMessComponent } from './fast-mess/fast-mess.component';
+import { HotNewsComponent } from './hot-news/hot-news.component';
+import { LatestComicShowComponent } from './latest-comic-show/latest-comic-show.component';
+import { AboutLinkComponent } from './about-link/about-link.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadComponent,
     BannerComponent,
-    FastMessComponent
+    FastMessComponent,
+    HotNewsComponent,
+    LatestComicShowComponent,
+    AboutLinkComponent
   ],
   imports: [
     BrowserModule,

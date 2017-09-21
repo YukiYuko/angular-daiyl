@@ -1,0 +1,17 @@
+.hot-news{ background-color: #fff;}
+
+.left-public-head{ border-bottom: 1px solid #e7e7e7;}
+.left-public-head .text{ display: inline-block;line-height: 40px;border-bottom: 2px solid crimson;padding: 0 10px;}
+.left-public-head .text i{ font-size: 25px;margin-right: 10px;color: crimson;}
+.left-public-head .text span{ font-size: 20px;}
+.left-public-head .icon{ width: 86px;background: url(../../assets/images/new-ico.png) no-repeat -103px -128px;float: right;height: 40px;margin-top: 4px}
+
+.hot-news-content{ }
+.hot-news-content li{ position: relative;padding: 15px;border-bottom: 1px solid #e7e7e7;}
+.hot-news-content li > img{ position: absolute;width: 90px;height: 60px;top: 15px;left: 15px;}
+.hot-news-content li .text{ margin-left: 100px;height: 60px;position: relative;cursor: pointer;}
+.hot-news-content li .text > img{ position: absolute;right: -15px;top: -15px;}
+.hot-news-content li .text h2{ font-size: 16px; color: #666;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.hot-news-content li .text p{ position: absolute;bottom: 0px;left: 0;width: 100%;}
+.hot-news-content li .text p span{ float: left;color: #999;font-size: 12px;}
+.hot-news-content li .text p i{ float: right;color: #999;font-size: 12px;}

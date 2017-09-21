@@ -33,3 +33,13 @@ a:hover { text-decoration: underline; }
 
 /* 设置body,html 最小高度 */
 html,body{ min-height: 100%;}
+
+/* 设置图片的显示方式 */
+img{ object-fit: cover;}
+
+/* 一些通用样式 */
+
+.cursor{ cursor: pointer}
+.mg20{ margin-bottom: 20px;}
+.mgb10{ margin-bottom: 10px;}
+

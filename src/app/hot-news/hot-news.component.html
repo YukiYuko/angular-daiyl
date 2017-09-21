@@ -1,0 +1,26 @@
+<div class="hot-news mg20">
+  <div class="left-public-head">
+    <div class="text">
+      <i class="iconfont icon-tucao"></i>
+      <span>吐槽最多</span>
+    </div>
+    <div class="icon"></div>
+  </div>
+  <div class="hot-news-content">
+    <ul>
+      <li *ngFor="let item of list">
+        <img src="{{item.imgUrl}}" alt="{{item.title}}">
+        <div class="text">
+          <img *ngIf="item.top && item.top==1" src="../../assets/images/gold.png" alt="金牌">
+          <img *ngIf="item.top && item.top==2" src="../../assets/images/sliver.png" alt="银牌">
+          <img *ngIf="item.top && item.top==3" src="../../assets/images/copper.png" alt="铜牌">
+          <h2>{{item.title}}</h2>
+          <p>
+            <span>{{item.time}}</span>
+            <i>{{item.tucao}}吐槽</i>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

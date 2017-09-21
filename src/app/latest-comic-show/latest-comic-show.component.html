@@ -1,0 +1,19 @@
+<div class="latestComicShow mg20">
+    <div class="left-public-head">
+      <div class="text">
+        <i class="iconfont icon-tucao"></i>
+        <span>近期漫展</span>
+      </div>
+      <div class="icon"></div>
+    </div>
+    <div class="latestComicShow-content">
+      <ul>
+        <li *ngFor="let item of list" class="cursor">
+          <img class="mgb10" src="{{item.imgUrl}}" alt="{{item.title}}">
+          <h2 class="mgb10">{{item.title}}</h2>
+          <p class="mgb10">{{item.content}}</p>
+          <p>{{item.time}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
