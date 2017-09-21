@@ -9,6 +9,7 @@ import { FastMessComponent } from './fast-mess/fast-mess.component';
 import { HotNewsComponent } from './hot-news/hot-news.component';
 import { LatestComicShowComponent } from './latest-comic-show/latest-comic-show.component';
 import { AboutLinkComponent } from './about-link/about-link.component';
+import { ListItemComponent } from './list-item/list-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutLinkComponent } from './about-link/about-link.component';
     FastMessComponent,
     HotNewsComponent,
     LatestComicShowComponent,
-    AboutLinkComponent
+    AboutLinkComponent,
+    ListItemComponent
   ],
   imports: [
     BrowserModule,

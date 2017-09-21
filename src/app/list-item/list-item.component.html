@@ -1,0 +1,16 @@
+<div class="list-item cursor mg20" *ngFor="let item of list">
+  <i>{{item.type}}</i>
+  <img src="{{item.imgUrl}}" alt="{{item.title}}">
+  <div class="text">
+    <h2 class="title mgb10">{{item.title}}</h2>
+    <p class="time mgb10">
+      <span>{{item.time}}</span>
+      <span> 来源：{{item.from}}</span>
+      <span>发布：{{item.editor}}</span>
+    </p>
+    <div class="content">{{item.content}}</div>
+    <p class="tag">
+      <a href="" *ngFor="let tag of item.tag">{{tag}}</a>
+    </p>
+  </div>
+</div>

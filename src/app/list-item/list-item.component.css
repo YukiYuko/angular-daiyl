@@ -1,0 +1,12 @@
+.list-item{ position: relative;height: 190px;background-color: #fff;}
+.list-item > i{ padding: 5px 10px; position: absolute; left: 0; top: 0;
+    color: #fff; background-color: #4c4c4e; font-size: 14px;}
+.list-item > img{ width: 280px; height: 100%; float: left;}
+.list-item .text{ margin-left: 280px;position: relative;height: 100%;padding: 10px;}
+.list-item .text h2{ font-size: 20px;color: #666;line-height: 22px;}
+.list-item .text .time { font-size: 13px; color: #999;}
+.list-item .text .time span{ margin-right: 20px;}
+.list-item .text .content { font-size: 14px; color: #4c4c4c;line-height: 20px;}
+.list-item .text .tag{ bottom: 10px;;left: 10px;;position: absolute}
+.list-item .text .tag a{  color: #fff;padding: 2px 3px; background: #b3b3b3;border-radius: 2px;
+    margin-right: 12px; float: left;}
