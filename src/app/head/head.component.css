@@ -3,12 +3,12 @@
 .head-box{ }
 .head-box > img{ float: left;}
 .head-box > .menu{ float: left;overflow: hidden;margin: 0;}
-.head-box > .menu li{ float: left;position: relative;}
-.head-box > .menu li::after{ content: '';position: absolute;width: 100%;height: 4px;bottom: 0;left: -100%;background-color: #34c9dd;
-    display: none;}
-.head-box > .menu li:hover::after{ display: block;left: 0;transition: all 0.5s ease-in-out;}
-.head-box > .menu li:hover a .before{ top: -100%;}
-.head-box > .menu li:hover a .after{ top: 0;}
+.head-box > .menu li{ float: left;position: relative;overflow: hidden}
+.head-box > .menu li a:after{ content: '';position: absolute;width: 100%;height: 4px;bottom: 0;left: -100%;background-color: #34c9dd;}
+.head-box > .menu li:hover a:after,.head-box > .menu li a.active:after{ left: 0;transition: all 0.3s ease-in-out;}
+.head-box > .menu li:hover a .before,.head-box > .menu li a.active .before{ top: -100%;}
+.head-box > .menu li:hover a .after,.head-box > .menu li a.active .after{ top: 0;}
+
 .head-box > .menu a{ padding: 0 12px;height: 60px;display: block;line-height: 60px;color: #fff;font-size: 15px;
 position: relative;width: 100px;text-align: center;}
 .head-box > .menu a span{ position: absolute;left: 0;width: 100%;height: 100%;transition: all 0.3s ease-in-out;}

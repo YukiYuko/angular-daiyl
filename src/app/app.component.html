@@ -2,23 +2,9 @@
 <div class="main">
   <app-head></app-head>
   <banner></banner>
-  <div class="container">
-      <fast-mess></fast-mess>
-      <div class="row">
-        <div class="col-md-8" style="padding-right:0;">
-          <div class="left">
-            <div class="news">
-              <list-item [list]="list"></list-item>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="right">
-            <hot-news></hot-news>
-            <latest-comic-show></latest-comic-show>
-          </div>
-        </div>
-      </div>
-  </div>
+  <router-outlet>
+    
+  </router-outlet>
+  
 </div>
 
