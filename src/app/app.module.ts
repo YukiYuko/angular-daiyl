@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './modules/app-routing.module';   
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
@@ -13,6 +14,10 @@ import { AboutLinkComponent } from './about-link/about-link.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { ComicComponent } from './view/comic/comic.component';
 import { HomeComponent } from './view/home/home.component';
+import { NewsDetailComponent } from './view/news-detail/news-detail.component';
+import { AnimeComponent } from './view/comic/anime/anime.component';
+import { CartoonComponent } from './view/comic/cartoon/cartoon.component';
+import { GameComponent } from './view/comic/game/game.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +30,17 @@ import { HomeComponent } from './view/home/home.component';
     AboutLinkComponent,
     ListItemComponent,
     ComicComponent,
-    HomeComponent
+    HomeComponent,
+    NewsDetailComponent,
+    AnimeComponent,
+    CartoonComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

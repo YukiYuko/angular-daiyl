@@ -28,7 +28,7 @@ small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正�
 ul, ol { list-style: none; }
 
 /* 重置文本格式元素 */
-a , a:hover{ text-decoration: none; }
+a , a:hover,a:link ,a:visited,a:active{ text-decoration: none; }
 i,em{ font-style: normal;}
 
 /* 设置body,html 最小高度 */

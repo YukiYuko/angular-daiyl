@@ -1,0 +1,6 @@
+.comic{ }
+.tabbar{ margin: 20px auto;border: 1px solid #e7e7e7;font-size: 0;width: 122px;border-radius: 15px;overflow: hidden}
+.tabbar a{ color: #666;border-right: 1px solid #e7e7e7;display: inline-block;font-size: 14px;width: 40px;padding: 5px 0;text-align: center;
+background-color: #fff;}
+.tabbar a:last-child{ border: none;}
+.tabbar a.active{ color: #fff;background-color: #333;}
