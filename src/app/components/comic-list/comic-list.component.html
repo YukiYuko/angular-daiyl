@@ -1,0 +1,19 @@
+<div class="animeList mgb30">
+  <a href="">
+    <div class="head">
+        <img src="{{item.imgUrl}}" alt="{{item.title}}">
+    </div>
+    <div class="center">
+        <h2 class="title mgb10 ellipsis">{{item.title}} <span>{{item.type}}</span></h2>
+        <p class="time mgb10">
+          <span>{{item.time}}</span>
+          <span> 来源：{{item.from}}</span>
+          <span>发布：{{item.editor}}</span>
+        </p>
+        <div class="content ellipsis-more2">{{item.content}}</div>
+    </div>
+    <div class="foot">
+      <a href="" *ngFor="let tag of item.tag">{{tag}}</a>
+    </div>
+  </a>
+</div>

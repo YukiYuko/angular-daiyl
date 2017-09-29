@@ -1,10 +1,10 @@
 import { Component, OnInit ,HostBinding} from '@angular/core';
 import {animate, state, style, trigger, transition} from '@angular/animations';
-
+import {BookService} from '../../../service/book/book.service';
 @Component({
   selector: 'cartoon',
   templateUrl: './cartoon.component.html',
-  styleUrls: ['./cartoon.component.css'],
+  styleUrls: ['./cartoon.component.scss'],
   animations: [    
     trigger('fadeInUpState', [   
       state('in', style({opacity: 1, transform: 'translate3d(0, 0, 0)'})),   
@@ -16,7 +16,8 @@ import {animate, state, style, trigger, transition} from '@angular/animations';
         animate('.4s cubic-bezier(.25,.8,.25,1)')   
       ])  
     ])   
-  ]  
+  ],
+  providers:[BookService]  
 })
 export class CartoonComponent implements OnInit {
 
@@ -27,9 +28,23 @@ export class CartoonComponent implements OnInit {
    */
   @HostBinding('@fadeInUpState') fadeInUpState;   
   @HostBinding('style.display') display = 'block';
-  constructor() { }
 
-  ngOnInit() {
-  }
+  /**
+   * 在上面的代码中，我们做了三步工作： 
+   * 1. 将BookService服务添加到@Component组件的元数据底部添加providers数组属性中。 
+   * 2. 将BookService注入到构造方法中，并定义了一个私有属性bookService。
+   * 3. 在OnInit()生命钩子函数中调用服务并获取书籍数据 
+   * 注：
+      providers数组告诉 Angular，当它创建新的DemoServiceComponent组件时，也要创建一个BookService的新实例。
+      尽量不要在构造方法中获取服务数据，要在生命钩子函数中调用。
+  */
 
+  list: any[];
+  constructor(private bookService: BookService) { }    
+  ngOnInit() {   
+    this.bookService.getBooks()   
+    .then(res => {   
+      this.list = res.list;
+    });   
+  }  
 }

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'latest-comic-show',
   templateUrl: './latest-comic-show.component.html',
-  styleUrls: ['./latest-comic-show.component.css']
+  styleUrls: ['./latest-comic-show.component.scss']
 })
 export class LatestComicShowComponent implements OnInit {
 

@@ -4,7 +4,7 @@ import {animate, state, style, trigger, transition} from '@angular/animations';
 @Component({
   selector: 'game',
   templateUrl: './game.component.html',
-  styleUrls: ['./game.component.css'],
+  styleUrls: ['./game.component.scss'],
   animations: [    
     trigger('fadeInUpState', [   
       state('in', style({opacity: 1, transform: 'translate3d(0, 0, 0)'})),   

@@ -42,4 +42,63 @@ img{ object-fit: cover;}
 .cursor{ cursor: pointer}
 .mg20{ margin-bottom: 20px;}
 .mgb10{ margin-bottom: 10px;}
+.mgb15{ margin-bottom: 15px;}
+.mgb30{ margin-bottom: 30px;}
 
+
+/* 单行超出省略 */
+.ellipsis{white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;}
+/* 多行超出省略*/
+.ellipsis-more3{ display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;}
+.ellipsis-more2{ display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;}
+/* 一些动画 */
+button.slide{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:40px;
+    font-size:16px;
+    padding:0 20px;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    &:hover{
+        background:#fff;
+        color:#1AAB8A;
+    }
+    &:before,&:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #1AAB8A;
+        transition:400ms ease all;
+    }
+    &:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+    }
+    &:hover:before,&:hover:after{
+        width:100%;
+        transition:800ms ease all;
+    }
+}
+
+button.translate {
+	display: inline-block;
+	margin: 20px 10px;
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    &:hover {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        transform: translate3d(0, -5px, 0);
+        -webkit-transform: translate3d(0, -5px, 0);
+    }
+}

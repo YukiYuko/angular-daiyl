@@ -1,32 +1,9 @@
-<p>
-  anime works!
-</p>
-<p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p><p>
-  anime works!
-</p>
+<div class="anime">
+  <div class="contanier">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of list;i as index">
+        <comic-list [item]="item"></comic-list>
+      </div>
+    </div>
+  </div>
+</div>

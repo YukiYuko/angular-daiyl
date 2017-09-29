@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './modules/app-routing.module';   
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
@@ -18,6 +19,8 @@ import { NewsDetailComponent } from './view/news-detail/news-detail.component';
 import { AnimeComponent } from './view/comic/anime/anime.component';
 import { CartoonComponent } from './view/comic/cartoon/cartoon.component';
 import { GameComponent } from './view/comic/game/game.component';
+import { ButtonDirective } from './directive/button/button.directive';
+import { ComicListComponent } from './components/comic-list/comic-list.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +37,16 @@ import { GameComponent } from './view/comic/game/game.component';
     NewsDetailComponent,
     AnimeComponent,
     CartoonComponent,
-    GameComponent
+    GameComponent,
+    ButtonDirective,
+    ComicListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

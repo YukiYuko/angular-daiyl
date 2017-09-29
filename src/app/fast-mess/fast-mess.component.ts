@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'fast-mess',
   templateUrl: './fast-mess.component.html',
-  styleUrls: ['./fast-mess.component.css']
+  styleUrls: ['./fast-mess.component.scss']
 })
 export class FastMessComponent implements OnInit {
 
