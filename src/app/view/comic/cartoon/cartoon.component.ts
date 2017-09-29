@@ -1,6 +1,6 @@
 import { Component, OnInit ,HostBinding} from '@angular/core';
 import {animate, state, style, trigger, transition} from '@angular/animations';
-import {BookService} from '../../../service/book/book.service';
+import {AjaxService} from '../../../service/ajax/ajax.service';
 @Component({
   selector: 'cartoon',
   templateUrl: './cartoon.component.html',
@@ -17,7 +17,7 @@ import {BookService} from '../../../service/book/book.service';
       ])  
     ])   
   ],
-  providers:[BookService]  
+  providers:[AjaxService]  
 })
 export class CartoonComponent implements OnInit {
 
@@ -31,18 +31,18 @@ export class CartoonComponent implements OnInit {
 
   /**
    * 在上面的代码中，我们做了三步工作： 
-   * 1. 将BookService服务添加到@Component组件的元数据底部添加providers数组属性中。 
-   * 2. 将BookService注入到构造方法中，并定义了一个私有属性bookService。
+   * 1. 将AjaxService服务添加到@Component组件的元数据底部添加providers数组属性中。 
+   * 2. 将AjaxService注入到构造方法中，并定义了一个私有属性ajaxService。
    * 3. 在OnInit()生命钩子函数中调用服务并获取书籍数据 
    * 注：
-      providers数组告诉 Angular，当它创建新的DemoServiceComponent组件时，也要创建一个BookService的新实例。
+      providers数组告诉 Angular，当它创建新的DemoServiceComponent组件时，也要创建一个AjaxService的新实例。
       尽量不要在构造方法中获取服务数据，要在生命钩子函数中调用。
   */
 
   list: any[];
-  constructor(private bookService: BookService) { }    
+  constructor(private ajaxService: AjaxService) { }    
   ngOnInit() {   
-    this.bookService.getBooks()   
+    this.ajaxService.get("mock-data/book.json")   
     .then(res => {   
       this.list = res.list;
     });   
