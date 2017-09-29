@@ -21,6 +21,7 @@ import { CartoonComponent } from './view/comic/cartoon/cartoon.component';
 import { GameComponent } from './view/comic/game/game.component';
 import { ButtonDirective } from './directive/button/button.directive';
 import { ComicListComponent } from './components/comic-list/comic-list.component';
+import { TimeComponent } from './components/time/time/time.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ComicListComponent } from './components/comic-list/comic-list.component
     CartoonComponent,
     GameComponent,
     ButtonDirective,
-    ComicListComponent
+    ComicListComponent,
+    TimeComponent
   ],
   imports: [
     BrowserModule,
